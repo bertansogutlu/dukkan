@@ -1,4 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhone,
+  faEnvelope,
+  faUser,
+  faMagnifyingGlass,
+  faCartShopping,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faInstagram,
+  faYoutube,
+  faFacebook,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
   return (
@@ -8,10 +23,12 @@ function Header() {
           <address className="flex justify-between text-white font-bold not-italic">
             <div className="flex items-center gap-8">
               <a href="tel:+902420242">
-                @ 02428880888
+                <FontAwesomeIcon icon={faPhone} />
+                &nbsp;02428880888
               </a>
               <a href="mailto:info@dukkan.com">
-                @ info@dukkan.com
+                <FontAwesomeIcon icon={faEnvelope} />
+                &nbsp;info@dukkan.com
               </a>
             </div>
             <p>Follow Us and get a chance to win 80% off</p>
@@ -19,10 +36,10 @@ function Header() {
               <span>Follow us :</span>
               <div className="flex items-center gap-3">
                 <div></div>
-                <div>@</div>
-                <div>@</div>
-                <div>@</div>
-                <div>@</div>
+                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faYoutube} />
+                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faTwitter} />
               </div>
             </div>
           </address>
@@ -42,11 +59,21 @@ function Header() {
           <div></div>
           <div></div>
           <div className="flex items-center gap-4 text-[#23A6F0]">
-            <p>@ Login / Register</p>
+            <p>
+              <FontAwesomeIcon icon={faUser} /> Login / Register
+            </p>
             <div className="flex gap-4">
-              <div>@</div>
-              <div>@</div>
-              <div>@</div>
+              <div>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faCartShopping} />
+                &nbsp;1
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faHeart} />
+                &nbsp;1
+              </div>
             </div>
           </div>
         </div>

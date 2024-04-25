@@ -5,17 +5,17 @@ import BestSellerProducts from '../bodyChildComponents/BestSellerProducts';
 import Banner from '../bodyChildComponents/Banner';
 import FeaturedPosts from '../bodyChildComponents/FeaturedPosts';
 
-function Body() {
+function Main() {
   return (
-    <body>
+    <main>
       <Hero/>
       <EditorPicks/>
       <BestSellerProducts/>
       <Hero/>
       <Banner/>
       <FeaturedPosts/>
-    </body>
+    </main>
   )
 }
 
-export default Body
+export default Main
