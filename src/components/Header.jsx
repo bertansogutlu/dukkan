@@ -60,7 +60,7 @@ function Header() {
           <div></div>
           <div className="flex items-center gap-4 text-[#23A6F0]">
             <p>
-              <FontAwesomeIcon icon={faUser} /> Login / Register
+              <FontAwesomeIcon icon={faUser} /> <a href="/login/">Login</a> / <a href="/register/">Register</a>
             </p>
             <div className="flex gap-4">
               <div>
