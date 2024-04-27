@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 const photos = [
-  "https://picsum.photos/id/20/1400/700",
   "https://picsum.photos/id/21/1400/700",
-  "https://picsum.photos/id/22/1400/700",
+  "https://picsum.photos/id/26/1400/700"
 ];
 
 function Hero() {
@@ -25,7 +24,7 @@ function Hero() {
     <div className="relative">
       <div
         onClick={left}
-        className="w-10 h-10 rounded-full absolute bg-white left-10 top-[45%]"
+        className="w-10 h-10 rounded-full cursor-pointer absolute bg-white left-10 top-[45%]"
       />
       <div className="flex">
         {photos.map((item, index) => {
@@ -41,14 +40,14 @@ function Hero() {
       </div>
       <div
         onClick={right}
-        className="w-10 h-10 rounded-full absolute bg-white right-10 top-[45%]"
+        className="w-10 h-10 rounded-full cursor-pointer absolute bg-white right-10 top-[45%]"
       />
-      <div className="flex absolute bottom-10 left-[45%] gap-3">
+      <div className="flex absolute bottom-10 left-[45%] gap-1">
         {photos.map((item, index) => {
           return (
             <div
               onClick={() => btn(index)}
-              className="rounded-full bg-white w-10 h-10"
+              className="bg-white w-16 h-2.5 cursor-pointer"
             ></div>
           );
         })}
