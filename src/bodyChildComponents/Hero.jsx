@@ -47,7 +47,7 @@ function Hero() {
         })}
       </div>
       <SlArrowRight onClick={right} className="w-12 h-12 rounded-full cursor-pointer absolute text-white right-8 top-[40%]"/>
-      <div className="flex absolute w-40 bottom-10 left-0 right-0 m-auto gap-0.5 justify-center">
+      <div className="flex absolute w-40 bottom-12 left-0 right-0 m-auto gap-0.5 justify-center">
         {photos.map((item, index) => {
           return (
             <div

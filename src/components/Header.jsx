@@ -18,7 +18,7 @@ import {
 function Header() {
   return (
     <header className="sticky top-0 z-10">
-      <div className="flex py-5 justify-center bg-[#252B42] text-sm">
+      <div className="flex py-4 justify-center bg-[#252B42] text-sm">
         <div className="w-[95%]">
           <address className="flex justify-between text-white font-bold not-italic">
             <div className="flex items-center gap-8">
@@ -36,16 +36,16 @@ function Header() {
               <span>Follow us :</span>
               <div className="flex items-center gap-3">
                 <div></div>
-                <FontAwesomeIcon icon={faInstagram} />
-                <FontAwesomeIcon icon={faYoutube} />
-                <FontAwesomeIcon icon={faFacebook} />
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faInstagram} className="text-lg" />
+                <FontAwesomeIcon icon={faYoutube} className="text-lg" />
+                <FontAwesomeIcon icon={faFacebook} className="text-lg" />
+                <FontAwesomeIcon icon={faTwitter} className="text-lg" />
               </div>
             </div>
           </address>
         </div>
       </div>
-      <div className="flex py-5 justify-center bg-white">
+      <div className="flex py-6 justify-center bg-white">
         <div className="w-[95%] flex justify-between">
           <h1 className="text-[#252B42] text-2xl font-bold">Dukkan</h1>
           <nav className="flex gap-3 items-center text-[#737373]">
@@ -58,11 +58,12 @@ function Header() {
           </nav>
           <div></div>
           <div></div>
-          <div className="flex items-center gap-4 text-[#23A6F0]">
+          <div className="flex items-center gap-8 text-[#23A6F0]">
             <p>
-              <FontAwesomeIcon icon={faUser} /> <a href="/login/">Login</a> / <a href="/register/">Register</a>
+              <FontAwesomeIcon icon={faUser} /> <a href="/login/">Login</a> /{" "}
+              <a href="/register/">Register</a>
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-7">
               <div>
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
               </div>
