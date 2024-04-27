@@ -17,7 +17,7 @@ import {
 
 function Header() {
   return (
-    <header>
+    <header className="sticky top-0 z-10">
       <div className="flex py-5 justify-center bg-[#252B42] text-sm">
         <div className="w-[95%]">
           <address className="flex justify-between text-white font-bold not-italic">
