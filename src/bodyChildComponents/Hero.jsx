@@ -52,6 +52,7 @@ function Hero() {
           return (
             <div
               onClick={() => btn(index)}
+              key={index}
               className={index === active ? "bg-white w-16 h-2.5 cursor-pointer" : "bg-white opacity-50 w-16 h-2.5 cursor-pointer"}
             ></div>
           );
