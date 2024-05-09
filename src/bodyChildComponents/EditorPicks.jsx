@@ -1,5 +1,12 @@
 import React from "react";
 
+const photos = [
+  "https://picsum.photos/id/27/1400/700",
+  "https://picsum.photos/id/28/1400/700",
+  "https://picsum.photos/id/29/1400/700",
+  "https://picsum.photos/id/30/1400/700",
+];
+
 function EditorPicks() {
   return (
     <div>
@@ -10,39 +17,27 @@ function EditorPicks() {
           <div
             className="w-full aspect-square bg-center bg-cover"
             style={{
-              backgroundImage:
-                "url(" +
-                "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" +
-                ")",
+              backgroundImage: `url(${photos[0]})`,
             }}
           ></div>
           <div className="w-full flex gap-8">
             <div
               className="w-full bg-center bg-cover"
               style={{
-                backgroundImage:
-                  "url(" +
-                  "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" +
-                  ")",
+                backgroundImage: `url(${photos[1]})`,
               }}
             ></div>
             <div className="flex flex-col gap-4 w-full">
               <div
                 className="grow bg-center bg-cover"
                 style={{
-                  backgroundImage:
-                    "url(" +
-                    "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" +
-                    ")",
+                  backgroundImage: `url(${photos[2]})`,
                 }}
               ></div>
               <div
                 className="grow bg-center bg-cover"
                 style={{
-                  backgroundImage:
-                    "url(" +
-                    "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" +
-                    ")",
+                  backgroundImage: `url(${photos[3]})`,
                 }}
               ></div>
             </div>
